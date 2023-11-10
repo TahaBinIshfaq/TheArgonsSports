@@ -1,0 +1,25 @@
+#form ::before{
+    width: 100%;
+    height: 58rem;
+  }
+  #form input {
+      margin: 0.4rem;
+  }
+  #number,#password,#name {
+      height: 1.7rem;
+      width: 14rem;
+  }
+  #formbtn input {
+      width: 12rem;
+  }
+  #othericons img {
+    width: 3rem;
+    height: 3rem;
+      margin: 0.6rem;
+  }
+  @media only screen and (min-width:250px) and (max-width:500px){
+      #form ::before {
+          width: 100%;
+          height: 73rem;
+      }
+  }

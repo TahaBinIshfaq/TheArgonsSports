@@ -1,0 +1,262 @@
+/* ***********NAvigation Bar************** */
+
+
+header {position: sticky;
+    top: 0rem;
+  
+}
+#header{
+    justify-content: center;
+    height: 6.1rem;
+    flex-direction: column;
+    /* position: sticky; */
+}
+#navbar ul li{
+    font-size: 0.9rem;
+}
+#navbar ul li a{
+    padding: 0px 5px;
+}
+#right button {
+   display: none;
+}
+#left {
+    position: relative;
+    top: 0px;
+    
+}
+#left img {
+    height: 3rem;
+    width: 3rem;
+    
+}
+
+
+
+/* ****************Search Bar************* */
+
+#searchbar{
+    display: flex;
+    flex-direction: column;
+}
+#deals ul li {
+    margin: 7px 4px;
+    padding: 0px 2px;
+    font-size: 0.8rem;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#search input {
+ 
+    height: 2rem;
+    width: 50%;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* *******************front page**************** */
+
+
+#front{
+    margin: 0rem;
+    display: grid;
+
+}
+#fronthead h1{
+    font-size: 2rem;
+}
+#frontpara p{
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    text-align: left;
+}
+
+
+#frontbtn button {
+   
+    width: 16rem;
+}
+#frontpara {
+    
+        font-size: 1rem;
+    margin: 25px;}
+
+
+
+
+/* ********************Home section************ */
+
+
+/* #hb3,#hb4{
+    /* display: none; */
+
+#grid{
+    margin: 0px;
+    width: 100%;
+}
+/* #hbox4 {
+   display: none;
+} */
+#hbox1,#hbox2,#hbox3,#hbox4{
+    width: 100%;
+
+}
+#hbox1 img,#hbox2 img,#hbox3 img,#hbox4 img{
+    width: 9rem;
+    height: 7.3rem;
+}
+
+.hsale{
+    width: 100%;
+}
+@media only screen and (max-width:300px) {
+
+}
+
+
+
+
+
+/* ********************Trend section************ */
+
+#trendb1{
+    display: none;
+}
+.trendimg a {
+   font-size: 0.5rem;
+    font-weight: normal;
+}
+
+#trendb8{
+    display: none;
+}
+
+#trendgrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 2rem;
+}
+.trendimg img {
+    margin: -5px;
+}
+.trendimg h1 {
+font-size: 1rem;
+}
+
+/* ********************Footer section************ */
+
+#footer h2{
+    font-size: 1.2rem;
+}
+.footerbox ul li a{
+    font-size: 0.6rem;
+    margin: 7px;
+}
+.footerbox ul li {
+    margin: 3px;
+}
+.footerbox {
+    margin-top: 0rem;
+}
+#frontpage {
+    height: 44rem;
+}
+
+
+
+
+@media (min-width:400px) and (max-width:566px){
+    #hbox1, #hbox2, #hbox3, #hbox4 {
+        width: 80%;
+    }
+    #hbox1 img, #hbox2 img, #hbox3 img, #hbox4 img {
+        width: 6rem;
+        height: 4.3rem;
+    }
+    .hsale {
+      text-align: center;
+    }
+    #signitems button {
+        width: 16rem;
+        height: 2.7rem;
+    }
+    .trendimg img {
+        width: 5rem;
+        height: 3rem;
+    }
+    .trendimg h1 {
+        font-size: 0.9rem;
+    }
+    #front h1 {
+        font-size: 2rem;
+    }
+    
+}
+@media (min-width:300px) and (max-width:400px){
+    #hbox1, #hbox2, #hbox3, #hbox4 {
+        align-items: center;
+        width: 60%;
+    }
+    #hbox1 img, #hbox2 img, #hbox3 img, #hbox4 img {
+        width: 6rem;
+        height: 4.3rem;
+    }
+    #signitems button {
+        width: 14rem;
+        height: 2.4rem;
+    }
+    .trendimg img {
+        width: 4rem;
+        height: 2.5rem;
+    }
+    .trendimg h1 {
+        font-size: 0.8rem;
+    }
+    #front h1 {
+        font-size: 2rem;
+    }
+    #frontpage {
+        height: 43rem;
+    }
+}
+@media (min-width:200px) and (max-width:300px){
+    #hbox1, #hbox2, #hbox3, #hbox4 {
+        align-items: center;
+        width: 50%;
+    }
+    #hbox1 img, #hbox2 img, #hbox3 img, #hbox4 img {
+        width: 5rem;
+        height: 3.9rem;
+    }
+    #signitems button {
+        width: 12rem;
+        height: 2.2rem;
+    }
+    .trendimg img {
+        width: 3rem;
+        height: 2rem;
+    }
+    .trendimg h1 {
+        font-size: 0.7rem;
+    }
+    #front h1 {
+        font-size: 1.7rem;
+    }
+    #frontbtn button {
+        width: 12rem;
+    }
+    #frontpage {
+        height: 43rem;
+    }
+}

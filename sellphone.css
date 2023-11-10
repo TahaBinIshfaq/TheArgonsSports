@@ -1,0 +1,289 @@
+
+/* ***********NAvigation Bar************** */
+
+
+header {position: sticky;
+    top: 0rem;
+  
+}
+#header{
+    justify-content: center;
+    height: 6.1rem;
+    flex-direction: column;
+    /* position: sticky; */
+}
+#navbar ul li{
+    font-size: 0.9rem;
+}
+#navbar ul li a{
+    padding: 0px 5px;
+}
+#right button {
+   display: none;
+}
+#left {
+    position: relative;
+    top: 0px;
+    
+}
+#left img {
+    height: 3rem;
+    width: 3rem;
+    
+}
+
+
+
+/* ****************Search Bar************* */
+
+#searchbar{
+    display: flex;
+    flex-direction: column;
+}
+#deals ul li {
+    margin: 7px 4px;
+    padding: 0px 2px;
+    font-size: 0.8rem;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#search input {
+ 
+    height: 2rem;
+    width: 50%;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* *******************front page**************** */
+
+
+#front{
+    margin: 0rem;
+    display: grid;
+
+}
+#fronthead h1{
+    font-size: 2rem;
+}
+#frontpara p{
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    text-align: left;
+}
+
+
+
+
+
+
+/* ********************Home section************ */
+
+
+/* #hb3,#hb4{
+    /* display: none; */
+
+#grid{
+    margin: 0px;
+    width: 100%;
+}
+/* #hbox4 {
+   display: none;
+} */
+#hbox1,#hbox2,#hbox3,#hbox4{
+    width: 23.2rem;
+
+}
+#hbox1 img,#hbox2 img,#hbox3 img,#hbox4 img{
+    width: 9rem;
+    height: 7.3rem;
+}
+
+.hsale{
+    width: 100%;
+}
+@media only screen and (max-width:300px) {
+
+}
+
+
+
+
+
+/* ********************Trend section************ */
+
+#trendb1{
+    display: none;
+}
+
+#trendb8{
+    display: none;
+}
+
+#trendgrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 2rem;
+}
+.trendimg img {
+    margin: -5px;
+}
+.trendimg h1 {
+font-size: 1rem;
+}
+
+/* ********************Footer section************ */
+
+#footer h2{
+    font-size: 1.2rem;
+}
+.footerbox ul li a{
+    font-size: 0.6rem;
+    margin: 7px;
+}
+.footerbox ul li {
+    margin: 3px;
+}
+.footerbox {
+    margin-top: 0rem;
+}
+
+
+
+/* @media(max-width:1000px) and (min-width:700px) { */
+    #sfbox1 h1 {
+        font-size: 4rem;
+    }
+
+    #sfboxp1 h1 {
+        font-size: 2.3rem;
+    }
+
+    #sfboxp1 h1 #sfbox1 p {
+        font-size: 1.4rem;
+    }
+
+    #sfboxp1 ul {
+        font-size: 1rem;
+    }
+
+    #sfbox2 img,
+    #sfboxp2 img {
+        height: 24rem;
+    }
+
+    #box1 h1 {
+        font-size: 2rem;
+    }
+
+    #box2 div {
+        font-size: 1.2rem;
+    }
+
+    .learn h1 {
+        font-size: 1.4rem;
+    }
+
+    .learn {
+        font-size: 0.9rem;
+    }
+
+    #elearn ::before {
+
+        top: 1398px;
+    }
+
+    #sellfront ::before {
+
+        top: 200px;
+    }
+
+    .learn img {
+        height: 3rem;
+    }
+/* } */
+
+
+@media(max-width:700px) and (min-width:250px) {
+
+  #sfboxp1 ul {
+    display: none;
+
+  }  
+  #sfbox1 h1 {
+    font-size: 2rem;
+}
+  #sfboxp1 h2 {
+    font-size: 1.1rem;
+}
+#sfboxp1 h1 {
+    font-size: 1.5rem;
+}
+#sfbox1 p {
+    font-size: 1.3rem;
+}
+
+
+#sfbox1,
+#sfboxp1 {
+    justify-content: flex-start;
+}
+
+#learnsell {
+    display: grid;
+    grid-template-columns: 5fr ;
+    grid-gap: 1rem;
+}
+.learn {
+    background-color: rgba(255, 255, 255, 0.937);
+    margin: 2rem;
+    height: 12rem;
+}
+.learn {
+    font-size: 0.7rem;
+}
+
+
+#elearn ::before {
+
+   height: 200rem;
+}
+#shead {
+   flex-direction: column;
+}
+#sfront {
+    
+    margin: 0.6rem;
+}
+
+}
+@media(max-width:401px) and (min-width:250px) {
+
+
+    #sfbox2 img, #sfboxp2 img {
+        height: 21rem;
+    }
+    #sfbox1 p {
+        font-size: 0.9rem;
+    }
+    #sfboxp1 h2 {
+        font-size: 0.8rem;
+    }
+    #sfboxp1 button,#sfbox1 button {
+        height: 2rem;
+        width: 5.5rem;}
+        #sfboxp1 h2,#sfbox1 p  {
+         display: none;
+        }
+}

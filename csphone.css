@@ -1,0 +1,26 @@
+
+
+.csoptions {
+    margin: 0rem;
+  
+    grid-template-columns: 5fr;
+    grid-gap: 2rem;
+}
+#csearch input {
+    margin-left: 1rem;
+    width: 50%;
+    height: 2rem;
+    border-radius: 4px;
+}
+#cservices::before {
+    height:115rem;
+    
+}
+@media(max-width:301px) and (min-width:250px){
+
+
+    .box{
+        width: 16rem;
+        font-size: 0.9rem;
+    }
+}

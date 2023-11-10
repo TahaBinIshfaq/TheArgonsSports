@@ -1,0 +1,764 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html,body {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 99999999;
+}
+
+#header {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Baloo Bhai 2', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 4.5rem;
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+/* *********** Logo *********** */
+#left {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0px;
+    left: 12px;
+}
+
+#left img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50px;
+    border: 4px solid rgb(59, 166, 254);
+    /* box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua; */
+}
+
+
+
+
+
+/* ********Navigation Bar ********* */
+
+
+
+
+
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    /* font-family: 'Merriweather', serif; */
+    color: rgb(59, 166, 254);
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.7rem;
+    color: rgb(59, 166, 254);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 30px;
+    border-radius: 30px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+    /* text-decoration: underline; */
+    color: black;
+    background-color: rgb(59, 166, 254);
+    transition: 0.7s;
+    box-shadow: 0 0 10px steelblue, 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua;
+}
+
+/* ******Button***** */
+#right {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    padding: 3px 3px;
+}
+
+#right button {
+    background-color: black;
+    color: rgb(59, 166, 254);
+    height: 3rem;
+    width: 5.5rem;
+    border-radius: 30px;
+    text-align: center;
+    margin: 7px -39px;
+    border: 2px solid rgb(59, 166, 254);
+
+}
+
+/* #btn  img{
+    filter: invert(100%);
+    width: 2rem;
+    height: 2rem;
+    margin: -12px 12px;
+} */
+#right button:hover,
+#right button:active {
+    color: black;
+    background-color: rgb(59, 166, 254);
+    transition: 0.8s;
+    box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+    /* border: 2px solid black; */
+    /* box-shadow: inset 6px 7px 2px black; */
+}
+
+
+
+
+/* ******************Search Bar ********************** */
+
+
+
+
+
+
+
+#searchbar {
+    /* box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: 4.3fr 2.5fr;
+    background-color: black;
+}
+
+#deals ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deals ul li {
+    list-style: none;
+    margin: 17px 4px;
+    padding: 6px 5px;
+    font-size: 1.2rem;
+}
+
+#deals ul li a {
+    color: rgb(59, 166, 254);
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#deals ul li a:hover {
+    /* border: 2px solid black; */
+
+    padding: 4px 4px;
+    color: black;
+    background-color: rgb(59, 166, 254);
+    transition: 0.5s;
+    border-radius: 12px;
+    box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+}
+
+
+#search input {
+    background-color: rgb(59, 166, 254);
+    width: 100%;
+    /* color: rgb(59, 166, 254); */
+    height: 3.3rem;
+    width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    margin: 4px 4px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+/* #search img {
+    filter: invert(100%);
+    width: 2rem;
+    height: 2rem;
+    margin: -12px 12px;
+} */
+
+#search input:hover,
+#search input:active {
+    color: black;
+    background-color: rgb(59, 166, 254);
+    transition: 0.5s;
+    box-shadow: 6px 7px 4px black;
+}
+
+
+
+
+
+
+
+
+/* ********************Front Page ************************** */
+/* #frontpage{
+    height: 50rem;
+    
+}
+
+
+#frontpage::before{
+      background: url('.//fr3.jpg') no-repeat center center/cover;
+    content: " ";
+    position: absolute;
+    top: 141px;
+    left: 0px;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#front ul li img{
+    display: inline-block;
+    width: 50rem;
+    height: 30rem;
+    margin: 20rem;
+}
+#front{
+    display: flex;
+    /* flex-wrap: wrap; */
+/* align-items: center; */
+/* margin: 20rem; */
+/* justify-content: center; */
+/* margin-top: 5rem; */
+/*  
+}
+#fronthead h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+#frontpara p{
+    color: gold;
+    font-size: 1.9rem;
+    text-align: left;
+    margin: 20px 20px;
+    display: inline-block;
+    width: 23rem;
+}
+    #frontbtn button{
+       
+        color: rgb(59, 166, 254);
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 18rem;
+        height: 3rem;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+    
+    #frontbtn button:hover {
+        background-color: rgb(59, 166, 254);
+        color: black;
+        transition: 0.6s;
+        border: 2px solid rgb(59, 166, 254);
+        cursor: pointer;
+        box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+    }
+    #front ul li:nth-child(1){
+        width: 23rem;
+        margin-left: 15.3rem;
+        font-weight: bold;
+        font-size: 3rem;
+        color: rgb(59, 166, 254);
+        box-shadow: 0 0 15px steelblue, 0 0 25px aqua, 0 0 45px aqua, 0 0 65px aqua;
+        text-align: center;
+        background-color: black;
+        border-radius: 15px;
+    }
+    #front ul li:nth-child(2){
+    font-style: italic;
+        font-size: 2rem;
+        color: gold;
+        text-align: center;
+        font-weight: bold;
+        margin: 40px;
+    }
+    #front ul li:nth-child(2) p span{
+        font-weight: bold;
+        color:aqua ;
+    
+    }
+    #front ul li:nth-child(3){
+        align-items: center;
+       text-align: center;
+       align-content: center;
+    }
+    
+#front ul li {
+  list-style: none;
+  text-align: center;
+}
+@media(max-width:301px) and (min-width:250px){
+#front ul li:nth-child(1){
+
+}
+}
+  */
+
+
+
+
+
+#frontpage {
+    height: 46rem;
+}
+
+
+#frontpage::before {
+    background: url('.//sellbg5.jpg') no-repeat center center/cover;
+    content: " ";
+    position: absolute;
+    top: 141px;
+    left: 0px;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    opacity: 0.8;
+    filter: invert(5%);
+}
+
+#front ul li img {
+    display: inline-block;
+    width: 50rem;
+    height: 30rem;
+    margin: 20rem;
+}
+
+#front {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20rem;
+    justify-content: center;
+}
+
+#frontpage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+#front h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(59, 166, 254);
+    box-shadow: 0 0 15px steelblue, 0 0 25px aqua, 0 0 45px aqua, 0 0 65px aqua;
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+}
+
+#frontpara {
+    font-style: italic;
+    font-family: 'Baloo Bhai 2', cursive;
+
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 40px;
+}
+
+#frontpara span {
+    font-weight: bold;
+    color: gold;
+}
+
+#frontbtn button {
+
+    color: rgb(59, 166, 254);
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 18rem;
+    height: 3rem;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+#frontbtn button:hover {
+    background-color: rgb(59, 166, 254);
+    color: black;
+    transition: 0.6s;
+    border: 2px solid rgb(59, 166, 254);
+    cursor: pointer;
+    box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************Home Section********************** */
+
+
+#grid {
+    display: grid;
+    /* grid-template-columns: 3fr 3fr 3fr; */
+    grid-gap: 1.5rem;
+    margin: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+
+#home::before {
+    background: url('.//fr2.jpg') no-repeat center center/cover;
+    content: " ";
+    position: absolute;
+    top: 58.8rem;
+    left: 0px;
+    width: 100%;
+    height: 116rem;
+    z-index: -1;
+    /* opacity: 0.7; */
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid white; */
+    height: 18.3rem;
+}
+
+.hbox {
+    text-align: center;
+    color: rgb(59, 166, 254);
+}
+
+#hbox1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    height: 420px;
+    grid-gap: 1rem;
+}
+
+.hbox h3 {
+    color: steelblue;
+    text-align: center;
+}
+
+.hbox a {
+    color: white;
+    text-decoration: none;
+}
+
+.hbox a:hover {
+    color: black;
+    background-color: rgb(59, 166, 254);
+    box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+    border-radius: 5px;
+    /* text-decoration: underline; */
+}
+
+.hbox:first-child {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    /* align-content: center; */
+    height: 5vh;
+}
+
+#hbox2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    grid-gap: 1rem;
+}
+
+#hbox3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    grid-gap: 1rem;
+}
+
+#hbox4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    grid-gap: 1rem;
+}
+
+.hsale a {
+    /* color: rgb(59, 166, 254); */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.hsale a:hover {
+    color: black;
+    background-color: aqua;
+    /* border-radius: 5px; */
+    /* text-decoration: underline; */
+}
+
+#hbox4 img {
+    width: 9rem;
+    height: 7.3rem;
+}
+
+.hbox img {
+    border-radius: 12px;
+    border: 2px solid rgb(59, 166, 254);
+}
+
+#hbox1,
+#hbox2,
+#hbox3,
+#hbox4 {
+    border-radius: 12px;
+}
+
+
+
+
+/* <!-- **************SignIn Section****************  --> */
+
+
+#signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 13rem;
+}
+
+#felxsign {
+
+    border: 2px solid white;
+}
+
+#signitems p {
+
+    color: rgb(59, 166, 254);
+    font-size: 1.3rem;
+    margin: 1.2rem;
+}
+
+#signitems button {
+    background-color: rgb(59, 166, 254);
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 18rem;
+    height: 3rem;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+#signitems button:hover {
+    color: rgb(59, 166, 254);
+    background-color: black;
+    transition: 0.6s;
+    border: 2px solid rgb(59, 166, 254);
+    cursor: pointer;
+    box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+}
+
+#signitems a {
+    color: rgb(59, 166, 254);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#signitems a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* <!-- ************Trend Section****************  --> */
+
+
+#trendgrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    /* grid-template-columns: repeat(4,3fr); */
+    /* height: 45rem; */
+    /* width: 14rem; */
+    grid-gap: 2rem;
+    /* margin-top: 52px; */
+    background-color: black;
+}
+
+.trendimg {
+    text-align: center;
+}
+
+.trendimg h1 {
+    color: rgb(59, 166, 254);
+}
+
+.trendimg img {
+    width: 88%;
+    border: 2px solid rgb(59, 166, 254);
+    margin: 7px;
+    border-radius: 12px;
+}
+
+.trendimg a {
+    /* color: rgb(59, 166, 254); */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.trendimg a:hover {
+    color: black;
+    background-color: rgb(59, 166, 254);
+    /* text-decoration: underline; */
+    border-radius: 4px;
+    width: 4px;
+    transition: 0.8s;
+    box-shadow: 0 0 10px steelblue, 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+
+}
+
+
+
+
+/* <!-- ************* Footer ************* --> */
+
+
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 30rem;
+}
+
+.footerbox {
+    margin-top: 6rem;
+}
+
+.footerbox ul li {
+    list-style: none;
+    margin: 12px;
+}
+
+.footerbox ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.footerbox ul li a:hover {
+    text-decoration: underline;
+    color: rgb(59, 166, 254);
+
+}
+
+.footerbox h2 {
+    color: aqua;
+}
+
+
+/* **********Copyright Section************ */
+
+#copyright {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* **********Animation Section************ */
+
+
+.hsale {
+    animation: grid1;
+    animation-duration: 2sec;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes grid1 {
+
+
+    0% {
+        position: relative;
+
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        position: relative;
+
+        top: 0;
+        left: 350px;
+    }
+
+    50% {
+        position: relative;
+
+        top: 150px;
+        left: 350px;
+    }
+
+    75% {
+        position: relative;
+
+        top: 150px;
+        left: 0;
+    }
+
+    100% {
+        position: relative;
+
+        top: 0;
+        left: 0;
+    }
+}
